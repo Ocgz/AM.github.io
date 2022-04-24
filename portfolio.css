@@ -1,0 +1,187 @@
+body {
+    background-image:url(background.svg);
+    background-size:cover;
+    background-repeat:repeat;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+h1 {
+    background-color: white;
+    padding: 10px;
+    width: fit-content;
+    margin: auto;
+    border-radius: 20px;
+}
+
+
+#logo {
+    float: left;
+}
+
+
+#home {
+    float: right;
+    margin-right: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px 10px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+   }
+   
+   #home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   #home:hover {
+    color: #e8e8e8;
+   }
+   
+   #home:hover::before {
+    width: 100%;
+   }
+
+nav ul {
+    list-style-type: none;
+    float: right;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    border: 0px;
+}
+
+nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.profile {
+    text-align: center;
+    width: 100%;
+}
+
+#profile_pic {
+    border-radius: 75px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+
+/* if a div has both an image and text */
+
+.project1, .project2, .project3 {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+    text-align: center;
+}
+
+.project1 {
+    background-color: white;
+    border-radius: 20px;
+    padding-bottom: 70px;
+}
+
+.project2 {
+    background-color: white;
+    border-radius: 20px;
+    padding-bottom: 65px;
+}
+
+.project3 {
+    background-color: white;
+    border-radius: 20px;
+    padding-bottom: 110px;
+}
+.project1 li, .project2 li, .project3 li, h1, h2, h3 {
+    color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.project1 ul, .project2 ul, .project3 ul {
+    margin: 10px;
+    text-align: center;
+}
+
+
+.project1 li, .project2 li, .project3 li {
+    text-align: left; 
+    width: 100%
+}
+
+#pic1, #pic2, #pic3 {
+    float: left;
+    margin: 30px 20px;
+    border-radius: 50px;
+    padding: 2px;
+    background-color: black;
+}
+
+#link {
+    text-decoration: none;
+    color: black;
+}
+
+#link:hover {
+    background-color: gold;
+    font-size: 24px;
+}
+
+.resume {
+    float: none;
+    clear: both;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.resume a {
+    color: white;
+}
+
+.resume a:hover {
+    background-color: black;
+    font-size: 20px;
+}
+
+.social {
+    text-align: center;
+    background: white;
+}
+
+.social img:hover {
+    width: 52px;
+    text-align: center;
+}
